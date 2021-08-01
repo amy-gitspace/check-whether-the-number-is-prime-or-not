@@ -1,0 +1,14 @@
+def primeNum(n):
+    count=0
+    # n=int(input("please input a integer: "))
+    for i in range(n):
+
+        if n%(i+1)==0:
+            count=count+1
+
+    if count==2:
+        print('{} is prime number'.format(n) )
+    else:
+        print('{} is not prime number'.format(n) )
+
+primeNum(int(input("please input a integer: ")))
